@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="./icon.png">
+            <p class="logo-text">SpiderWacho</p>
+
+        </div>
+        <div class="form-container">
+            <div class="top-section">
+                    <p class="top-text">This is a mock up form to register, made for THE ODIN PROJECT</p>
+                    <p class="top-text">Complete the form below and register, life is better when you're on SpiderWacho</p>
+            </div>
+            <div class="main-section">
+                <form action="">
+                    <div class="first-row">
+                        <label for="name">FIRST NAME</label>
+                        <input type="text" name="name" id="name" placeholder="Peter">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" placeholder="peter.parker@mate.com">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" name="password" id="password">
+                    </div>
+                    <div class="second-row">
+                        <label for="last">LAST NAME</label>
+                        <input type="text" name="last" id="last" placeholder="Parker">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="number" name="phone" id="phone" placeholder="1123567820">
+                        <label for="repeat">CONFIRM PASSWORD</label>
+                        <input type="password" name="repeat" id="repeat">
+                    </div>
+                </form>
+            </div>
+            <div class="footer-section">
+                <button>Create Account</button>
+                <p>Already have an account? <a href="">Log In</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

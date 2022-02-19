@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@500&display=swap'); 
+*{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: rgb(84, 41, 124);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(32, 32, 32);
+    
+}
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./space-bg.jpg);
+    background-color: rgb(36, 36, 36);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.logo-container {
+    width: 40%;
+    max-height: 150px;
+    margin-top: 10%;
+    background-color: rgba(0, 0, 0, 0.664);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 4em;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    margin: 0px;
+    margin-top: 2%;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+.form-container {
+    height: 100%;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.904);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form {
+     width: 100%;
+     display: flex;
+     font-family: 'Roboto', sans-serif;
+}
+.first-row, .second-row {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+label {
+    position: relative;
+    top: 7%;
+    left: 5px;
+}
+
+
+
+input:focus {
+    box-shadow: 0px 0px 2px 1px;
+
+}
+
+.top-section {
+    height: 30%;
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.top-text {
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.main-section {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.76);
+    box-shadow:  0px 1px 3px 0.5px rgb(177, 177, 177);
+    padding: 5%;
+    
+}
+
+.footer-section {
+    height: 30%;
+    width: 100%;
+    padding: 5%;
+}
+
+button {
+    min-height: 50px;
+    height: 10%;
+    min-width: 150px;
+    width: 20%;
+    background-color: rgb(84, 41, 124);
+    color: white;
+}
+
+button:hover {
+    background-color: rgb(91, 60, 121);
+    box-shadow: 0px 0px 3px 0.5px black;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+a:hover {
+    color: orangered;
+}
+
+input[type="password"]:invalid {
+    border: 1px solid red;
+}
+
+input[type="password"]:focus {
+    outline: none;
+    
+}
+
+
+input[type="text"]:valid ,
+input[type="email"]:valid ,
+input[type="number"]:valid {    
+    background: url(./check.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    }
+
+input {
+    height: 10%;
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5%;
+    border: 0.5px solid rgb(214, 214, 214);
+}
+
+input[type="text"]:placeholder-shown,
+input[type="email"]:placeholder-shown ,
+input[type="number"]:placeholder-shown {
+    background-size: 0px;
+}
